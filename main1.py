@@ -23,13 +23,13 @@ class MyGame(arcade.Window):
     def setup(self):
         animals = ['bear','buffalo','chick','chicken','cow','crocodile','dog','duck','elephant','frog','giraffe','goat','gorilla','hippo','horse','monkey','moose','narwhal','owl','panda','parrot','penguin','pig','rabbit','rhino','sloth','snake','walrus','whale','zebra']
 
-        animal = 'panda' 
-        for i in range(20): 
-            animal = random.choice(animals)
-            self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
-            self.animal_sprite.center_x = random.randint(10,799)
-            self.animal_sprite.center_y = random.randint(10,590)
-            self.animal_list.append(self.animal_sprite)
+        animal = 'panda'  
+        for i in range(20):  
+            animal = random.choice(animals) 
+            self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5) 
+            self.animal_sprite.center_x = random.randint(10,799) 
+            self.animal_sprite.center_y = random.randint(10,590) 
+            self.animal_list.append(self.animal_sprite) 
         
 
     def on_draw(self):
